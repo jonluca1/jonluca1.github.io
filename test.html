@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Website</title>
+</head>
+<body>
+    <h1>Welcome to the Toggle Website</h1>
+    
+    <div id="login-container">
+        <button onclick="login()">Login with GitHub</button>
+    </div>
+
+    <div id="toggle-container" style="display: none;">
+        <label>
+            <input type="checkbox" id="toggleCheckbox"> Toggle Feature
+        </label>
+        <button onclick="updateToggleState()">Save Toggle State</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
