@@ -1,17 +1,3 @@
-let accessToken;
-
-async function login() {
-    // Implement GitHub OAuth login using Octokit.js or any other GitHub authentication library
-    // Set accessToken after successful login
-    // Example: accessToken = 'YOUR_GITHUB_ACCESS_TOKEN';
-
-    // Simulate successful login
-    accessToken = 'SIMULATED_ACCESS_TOKEN';
-
-    document.getElementById('login-container').style.display = 'none';
-    document.getElementById('toggle-container').style.display = 'block';
-}
-
 async function updateToggleState() {
     const toggleState = document.getElementById('toggleCheckbox').checked;
 
