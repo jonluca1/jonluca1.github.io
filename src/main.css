@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;*/
     font-size: var(--default-font-size);
-    background: #000000 url(./Images/STEAM/Logo-black-blur3.jpg) no-repeat center center fixed;
+    background: #000000 url(./images/STEAM/Logo-black-blur3.jpg) no-repeat center center fixed;
     /*
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
