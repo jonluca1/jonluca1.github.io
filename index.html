@@ -58,11 +58,9 @@
 
 
 <body id="main__body">
-    <div>
-        <div id="main">
-            <!--The Header-->
-            <div class="desktop" id="header__desktop">
-                
+	<div id="main">
+		<!--START HHEADER -->
+		<div class="desktop" id="header__desktop">
 			<header class="header__header">
 				<div class="inner">
 					<div class="header__middle">
@@ -70,7 +68,7 @@
 							<div>
 								<!-- The below line can be an image or a h1, either will	 work -->
 								<!--<img src="assets/logo.png" alt="Google logo"> -->
-								<h1 class="header__logo" style="line-height: 5rem;"><a class="logo__link gradient-text" href="index.html">Dan The Wizard</a></h1>
+								<h1 class="header__logo" style="line-height: 5rem;"><a class="logo__link gradient-text" href="/">Dan The Wizard</a></h1>
 							</div>
 						</div>
 						<div class="header__middle__child header__spacing"></div>
@@ -94,46 +92,47 @@
 		</div>
 
 		<div class="mobile_device_900px" id="header__mobile">               
-			<div id="header__mobile">
-				<header class="header__header">
-					<div class="inner">
-						<div class="header__middle">
-							<div class="logo header__middle__child">
-								<div>
-									<!-- The below line can be an image or a h1, either will work -->
-									<!--<img src="assets/logo.png" alt="Google logo"> -->
-									<h1 class="header__logo" style="line-height: 5rem;"><a class="logo__link" href="index.html">Dan The Wizard</a></h1>
-								</div>
+			<header class="header__header">
+				<div class="inner">
+					<div class="header__middle">
+						<div class="logo header__middle__child">
+							<div>
+								<!-- The below line can be an image or a h1, either will work -->
+								<!--<img src="assets/logo.png" alt="Google logo"> -->
+								<h1 class="header__logo" style="line-height: 5rem;"><a class="logo__link" href="/">Dan The Wizard</a></h1>
 							</div>
-							<!--
-							<div class="header__middle__child header__spacing"></div>
-							<div class="header__middle__child">
-								<section>
-									<nav>
-										<div class="container nav__container">
-											<ul class="nav__items">
-												<li><a href="/about" class="">About Us</a></li>
-												<li><a href="/blog" class="">Our Blogs</a></li>
-												<li><a href="/request" class="">Request</a></li> 
-
-
-											</ul>
-									
-										<button id="open__nav-btn"><i class="uil uil-bars"></i></button>
-										<button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
-
-										</div>
-									</nav>
-								</section>
-							</div>
-							-->
 						</div>
+						<!--
+						<div class="header__middle__child header__spacing"></div>
+						<div class="header__middle__child">
+							<section>
+								<nav>
+									<div class="container nav__container">
+										<ul class="nav__items">
+											<li><a href="/about" class="">About Us</a></li>
+											<li><a href="/blog" class="">Our Blogs</a></li>
+											<li><a href="/request" class="">Request</a></li> 
+
+
+										</ul>
+								
+									<button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+									<button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+
+									</div>
+								</nav>
+							</section>
+						</div>
+						-->
 					</div>
-				</header>
-			</div>
+				</div>
+			</header>
 		</div>
 
 		<hr />
+
+		<!-- END HEADER -->
+		<!-- START MAIN PAGE-->
 
 		<div id="page__main">	
 			<section>
@@ -141,9 +140,11 @@
 					<h2>Dan The Wizard's Official website</h2>
 					<img class="center__img img-50 img-mobile-big-to-center" src="/src/images/STEAM/STEAM.png" alt="STEAM Logo" />
 				</div>
-				<p>&#128075; Hello welcome to <strong>my website</strong>, I’m @DanTheWizard or @DanielPalmik:<p>
+				<p>&#128075; Hello welcome to <strong>my website</strong>, my name is DanielPalmik<p>
+			</section>
+			<section>
+				<p>Some facts about me:<p></p>
 				<ul>
-					<li>My name is Daniel Palmik</li>
 					<li>I strive to keep my friends, family, and coworkers safe in the digital and real world.</li>
 					<li>I am interested in, enjoy working and figuring out how technology works (and possibly reverse engineer it), creating scripts to make my life (and my family/friends/coworkers) easier, and being together with my friends working on a problem.</li>
 					<li>I am currently learning the Google Cybersecurity program, web development (with HTML, PHP, CSS, SQL, etc.), and simple scripting languages such as Python, Powershell, Batch, Bach, and javascript (without any help of plugins like WordPress)</li>
@@ -183,29 +184,32 @@
 				</ul>
 			</section>
 			
-			</div>
-			
-			<hr />
-			
-			<div id="my__footer">
-				<footer style="text-align: center;">
-					<p style="margin-bottom: 0px; ">
-						Site made by: The Wizard
-					</p>
-
-					<p style=" display: inline-flex; margin-top: 9px;">
-						!!! Thanks to GitHub for the free hosting domain !!!
-					</p>
-				</footer>
-			</div>
 		</div>
-
+		
 		<script>
 			load__contents();
 		</script>
 
+		<!-- END MAIN PAGE -->
+			
+		<hr />
 
-    </div>
+		<!-- START FOOTER -->
+		
+		<div id="my__footer">
+			<footer style="text-align: center;">
+				<p style="margin-bottom: 0px; ">
+					Site made by: The Wizard
+				</p>
+
+				<p style=" display: inline-flex; margin-top: 9px;">
+					!!! Thanks to GitHub for the free hosting domain !!!
+				</p>
+			</footer>
+		</div>
+
+		<!-- END FOOTER -->
+	</div>
 </body>
 
 
