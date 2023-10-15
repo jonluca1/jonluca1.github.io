@@ -1,15 +1,15 @@
-﻿getScript('src/javascript/collapsible-load.js');
+﻿getScript('/src/javascript/collapsible-load.js');
 
 
-getScript('src/javascript/remove-unnecessary.js');
+getScript('/src/javascript/remove-unnecessary.js');
 
-getScript('src/javascript/utilities.js');
+getScript('/src/javascript/utilities.js');
 
 
-getScript("src/javascript/global-msg.js");
+getScript("/src/javascript/global-msg.js");
     //console.log("\u2705 Global Message Loaded");
 
-//$.getScript("src/javascript/global-msg.js", function (data, textStatus, jqxhr) {
+//$.getScript("/src/javascript/global-msg.js", function (data, textStatus, jqxhr) {
     //console.log(data); // Data returned
     //console.log(textStatus); // Success
     //console.log(jqxhr.status); // 200

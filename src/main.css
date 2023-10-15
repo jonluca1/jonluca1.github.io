@@ -1,16 +1,16 @@
-@import 'css/error.css';
-@import 'css/body-load-text.css';
-@import 'css/alert.css';
-@import 'css/dropdown.css';
-@import 'css/gradient.css';
-@import 'css/scrollbar.css';
-@import 'css/collapsible.css';
-@import 'css/cookie-notice.css';
-@import 'css/form.css';
-@import 'css/posts.css';
-@import 'css/mobile-navbar.css';
-@import 'css/dashboard.css';
-@import 'css/slider.css';
+@import '/src/css/error.css';
+@import '/src/css/body-load-text.css';
+@import '/src/css/alert.css';
+@import '/src/css/dropdown.css';
+@import '/src/css/gradient.css';
+@import '/src/css/scrollbar.css';
+@import '/src/css/collapsible.css';
+@import '/src/css/cookie-notice.css';
+@import '/src/css/form.css';
+@import '/src/css/posts.css';
+@import '/src/css/mobile-navbar.css';
+@import '/src/css/dashboard.css';
+@import '/src/css/slider.css';
 
 
 
@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;*/
     font-size: var(--default-font-size);
-    background: #000000 url(./images/STEAM/Logo-black-blur3.jpg) no-repeat center center fixed;
+    background: #000000 url(/src//images/STEAM/Logo-black-blur3.jpg) no-repeat center center fixed;
     /*
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -690,4 +690,3 @@ li-break {
 .grecaptcha-badge:hover {
     width: 256px !important;
 }
-05:24:31 PM
