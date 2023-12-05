@@ -19,7 +19,7 @@
         // Function to redirect based on the argument in the URL
         function redirectToPage() {
             // Get the value of the 'page' parameter from the URL
-            var pageParam = getParameterByName('page');
+            var pageParam = getParameterByName('to');
 
             // Define the mapping of argument values to corresponding pages
             var pageMapping = {
@@ -35,7 +35,7 @@
                 window.location.href = pageMapping[pageParam];
             } else {
                 // Redirect to a default page or display an error message
-                window.location.href = 'default.html';
+                window.location.href = '/';
             }
         }
 
