@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script>
+        // Function to extract the value of a specific parameter from the URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Function to redirect based on the argument in the URL
+        function redirectToPage() {
+            // Get the value of the 'page' parameter from the URL
+            var pageParam = getParameterByName('page');
+
+            // Define the mapping of argument values to corresponding pages
+            var pageMapping = {
+                'ELA-slide-research-project': 'https://docs.google.com/presentation/d/11DLAy0476V4PEuIZvOvBfPQUgJphgw01LVInDbQPcb4/edit#slide=id.g2a14eca4f19_1_0',
+                'page2': 'page2.html',
+                'page3': 'page3.html'
+                // Add more mappings as needed
+            };
+
+            // Check if the argument is valid and corresponds to a page
+            if (pageParam && pageMapping.hasOwnProperty(pageParam)) {
+                // Redirect to the specified page
+                window.location.href = pageMapping[pageParam];
+            } else {
+                // Redirect to a default page or display an error message
+                window.location.href = 'default.html';
+            }
+        }
+
+        // Call the redirect function when the page loads
+        window.onload = redirectToPage;
+    </script>
+</head>
+<body>
+    <p>This is the redirect page. If you are not redirected, Please go back.</p>
+</body>
+</html>
