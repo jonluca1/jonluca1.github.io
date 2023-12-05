@@ -42,9 +42,16 @@
 
         // Call the redirect function when the page loads
         window.onload = redirectToPage;
+
+        //set the manual redirect "click here" link
+        document.getElementById("manual_redirect").setAttribute("href",pageMapping[pageParam]);
+
+
     </script>
+
 </head>
 <body>
-    <p>This is the redirect page. If you are not redirected, Please go back.</p>
+    <p>This is the redirect page. IIf you are not redirected, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="manual_redirect">click here</a>.</p>
 </body>
 </html>
+
