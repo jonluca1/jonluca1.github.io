@@ -33,7 +33,7 @@
             // Check if the argument is valid and corresponds to a page
             if (pageParam && pageMapping.hasOwnProperty(pageParam)) {
                 // Redirect to the specified page
-                window.location.href = pageMapping[pageParam];
+                //window.location.href = pageMapping[pageParam];
                 //set the manual redirect "click here" link
                 document.getElementById("manual_redirect").setAttribute("href",pageMapping[pageParam]);
             } else {
@@ -44,7 +44,7 @@
         }
     
         // Call the redirect function when the page loads
-        //window.onload = redirectToPage;
+        window.onload = redirectToPage;
     </script>    
 
 </head>
