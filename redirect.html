@@ -33,7 +33,7 @@
             // Check if the argument is valid and corresponds to a page
             if (pageParam && pageMapping.hasOwnProperty(pageParam)) {
                 // Redirect to the specified page
-                //window.location.href = pageMapping[pageParam];
+                window.location.href = pageMapping[pageParam];
                 //set the manual redirect "click here" link
                 document.getElementById("manual_redirect").setAttribute("href",pageMapping[pageParam]);
             } else {
@@ -50,7 +50,7 @@
 </head>
 
     <body>
-        <p>This is the redirect page. If you are not redirected, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="manual_redirect">click here</a>.</p>
+        <p>This is the redirect page. If you are not redirected, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="manual_redirect">click here</a> LOL.</p>
     </body>
 
 
