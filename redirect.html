@@ -24,7 +24,7 @@
             // Define the mapping of argument values to corresponding pages
             var pageMapping = {
                 'ELA-slide-research-project-1': 'https://docs.google.com/presentation/d/11DLAy0476V4PEuIZvOvBfPQUgJphgw01LVInDbQPcb4',
-                'page2': 'page2.html',
+                'Dont-click-this': 'https://www.youtube.com/watch?v=xvFZjo5PgG0',
                 'page3': 'page3.html'
                 // Add more mappings as needed
             };
@@ -41,10 +41,9 @@
         }
 
         // Call the redirect function when the page loads
-        window.onload = redirectToPage;
+        //window.onload = redirectToPage;
 
-        //set the manual redirect "click here" link
-        document.getElementById("manual_redirect").setAttribute("href",pageMapping[pageParam]);
+
 
 
     </script>
@@ -55,3 +54,7 @@
 </body>
 </html>
 
+<script>
+        //set the manual redirect "click here" link
+        document.getElementById("manual_redirect").setAttribute("href",pageMapping[pageParam]);
+</script>
