@@ -1,6 +1,6 @@
-# My Github WebSite: danthewizard.github.io
+# My Github WebSite: jonluca1.github.io
 
-This repository hosts a website created purely for fun. It's a personal project developed by me (Dan The Wizard) for enjoyment and experimentation.
+This repository hosts a website created purely for fun. It's a personal project developed by Dan The Wizard and edited by Jonluca1 for enjoyment and experimentation.
 
 
 ## Usage
