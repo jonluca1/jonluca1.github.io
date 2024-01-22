@@ -2,8 +2,6 @@
 
 <!-- This is forked off from danthewizard.github.io -->
 
-
-
 	<title>Jonluca's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -49,7 +47,8 @@
 
 		function load__contents () {
 			$("#header__desktop").load("/arch/header-desktop.html");
-			$("#header__desktop").load("/arch/header-desktop.html");
+			$("#header__mobile").load("/arch/header-mobile.html");
+			$("#my__footer").load("/arch/footer.html");
         	getScript('/src/main-end.js');
 		};
     </script>
@@ -61,7 +60,7 @@
 	<div id="main">
 		<!--START HHEADER -->
 		<div class="desktop" id="header__desktop">
-			<!-- Show loading animation until the header is loaded by javascript-->
+			<!-- Show loading animation until the header is loaded by javascript -->
 			<div class="loader">
 				<span class="loader__element"></span>
 				<span class="loader__element"></span>
@@ -70,49 +69,19 @@
 		</div>
 
 		<div class="mobile_device_900px" id="header__mobile">               
-			<header class="header__header">
-				<div class="inner">
-					<div class="header__middle">
-						<div class="logo header__middle__child">
-							<div>
-								<!-- The below line can be an image or a h1, either will work -->
-								<!--<img src="assets/logo.png" alt="Google logo"> -->
-								<h1 class="header__logo" style="line-height: 5rem;"><a class="logo__link" href="/">JonLuca Lombardi</a></h1>
-							</div>
-						</div>
-
-						<div class="header__middle__child header__spacing"></div>
-						<div class="header__middle__child">
-							<!-- Disabled Due to layout Bug -->
-							<!-- 
-							<section>
-								<nav>
-									<div class="container nav__container">
-										<ul class="nav__items">
-											<li><a href="/about" class="">About Me</a></li>
-											<li><a href="/things" class="">My Things</a></li>
-											<li><a href="/contact" class="">Contact</a></li> 
-
-
-										</ul>
-								
-									<button id="open__nav-btn"><i class="uil uil-bars"></i></button>
-									<button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
-
-									</div>
-								</nav>
-							</section>
-							-->
-						</div>
-
-					</div>
-				</div>
-			</header>
+			<!-- Show loading animation until the header is loaded by javascript -->
+			<div class="loader">
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+			</div>
 		</div>
 
 		<hr />
 
 		<!-- END HEADER -->
+
+
 		<!-- START MAIN PAGE-->
 
 		<div id="page__main">	
@@ -170,26 +139,26 @@
 			
 		</div>
 		
-		<script>
-			load__contents();
-		</script>
+
+
 
 		<!-- END MAIN PAGE -->
-			
+		
+		<script>
+			load__contents();
+		</script>	
+		
 		<hr />
 
 		<!-- START FOOTER -->
 		
 		<div id="my__footer">
-			<footer style="text-align: center;">
-				<p style="margin-bottom: 0px; ">
-					Site made by: The Wizard & Jonluca1
-				</p>
-
-				<p style=" display: inline-flex; margin-top: 9px;">
-					!!! Thanks to GitHub for the free hosting domain !!!
-				</p>
-			</footer>
+			<!-- Show loading animation until the header is loaded by javascript -->
+			<div class="loader">
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+			</div>
 		</div>
 
 		<!-- END FOOTER -->
