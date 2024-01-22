@@ -48,7 +48,8 @@
         //});
 
 		function load__contents () {
-           getScript('/src/main-end.js');
+			$("#header__desktop").load("/arch/header-desktop.html");
+        	getScript('/src/main-end.js');
 		};
     </script>
 	
@@ -59,46 +60,7 @@
 	<div id="main">
 		<!--START HHEADER -->
 		<div class="desktop" id="header__desktop">
-			<header class="header__header">
-				<div class="inner">
-					<div class="header__middle">
-						<div class="logo header__middle__child">
-							<div>
-								<!-- The below line can be an image or a h1, either will	 work -->
-								<!--<img src="assets/logo.png" alt="Google logo"> -->
-								<h1 class="header__logo" style="line-height: 5rem;"><a class="logo__link gradient-text" href="/">JonLuca Lombardi</a></h1>
-							</div>
-						</div>
-						<div class="header__middle__child header__spacing"></div>
-						<div class="header__middle__child">
-							<section>
-								<nav class="top__header__nav">
-
-									<!-- 
-										Dan's Tips:
-										href="" is the url for redirection to another tab 
-										class="" is for javascript or css to identify and edit the element
-
-										In this case:
-										<li><span><a href="/about" class="https://www.google.com">About Me</></span></li>
-																		  ^^^^^^^^^^^^^^^^^^^^^^
-										You have put the url into class, therfore removing the original class, meaning the css cannot style it properly and makes the layout look weird.
-
-										so if you want the about tab to redirect to google.com, it will look like this:
-										<li><span><a href="https://www.google.com" class="header__link">About Me</></span></li>
-									-->
-									
-									<!-- I have reverted it back to what it was for now -->
-									<li><span><a href="/about" class="header__link">About Me</a></span></li>
-									<li><span><a href="/things" class="header__link">My Things</a></span></li>
-									<li><span><a href="/contact" class="header__link">Contact</a></span></li>
-
-								</nav>
-							</section>
-						</div>
-					</div>
-				</div>
-			</header>
+			Loading...
 		</div>
 
 		<div class="mobile_device_900px" id="header__mobile">               
