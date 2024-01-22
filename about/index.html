@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<!-- This is forked off from danthewizard.github.io -->
+
+	<title>Jonluca's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <meta name="description" content="This is my peronal GitHub website. There is nothing much yet, but more will come soon (still under development)">
+
+    <style>
+        body {
+            background: #000000;
+        }
+    </style>
+
+
+    <link rel="shortcut icon" href="/src/images/favicon.ico">
+    <link rel="icon" href="/src/images/favicon.ico">
+    <link rel="stylesheet" href="/src/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+	
+	<script>
+        function getScript(url) {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = url;
+            document.head.appendChild(s)
+        }
+    </script>
+
+    <script src="/src/main.js"></script>
+    <script src="/src/javascript/jquery-3.7.1-min.js"></script>
+
+	<!-- Copyright https://pdfobject.com/ -->
+    <script src="https://raw.githubusercontent.com/pipwerks/PDFObject/master/pdfobject.js"></script>
+
+    <script>
+		function load__contents () {
+        	getScript('/src/main-end.js');
+
+            var options = {
+                height: "400px",
+                page: '2',
+                pdfOpenParams: {
+                    view: 'FitV',
+                    pagemode: 'thumbs',
+                    search: 'lorem ipsum'
+                }
+            };
+
+            PDFObject.embed("/about/sample.pdf", "#my-resume", options);
+		};
+    </script>
+	
+</head>
+
+
+<body id="main__body">
+	<div id="main">
+		<!--START HHEADER -->
+		<div class="desktop" id="header__desktop">
+			<!-- Show loading animation until the header is loaded by javascript -->
+			<div class="loader">
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+			</div>
+		</div>
+
+		<div class="mobile_device_900px" id="header__mobile">               
+			<!-- Show loading animation until the header is loaded by javascript -->
+			<div class="loader">
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+			</div>
+		</div>
+
+		<hr />
+
+		<!-- END HEADER -->
+
+
+		<!-- START MAIN PAGE-->
+
+		<div id="page__main">	
+			<section>
+				<div class="center__text">
+					<h2>About Me</h2>
+				</div>
+			</section>
+
+			<hr/>
+
+			<section>
+				<p>Some facts about me:<p></p>
+				<ul>
+					<li>I love working on, cleaning, and restoring automobiles</li>
+					<li>I enjoy learning about and building computers</li>
+					<li>I like spending quality time with friends and family</li>
+					<li>STREAM!!!!</li>
+					<li-next>Seeing peoples faces when they walk into the STREAM lab makes it that much better!</li-next>
+					<li>I love to work hard on projects</li>
+					<li-next>The end result always makes it worth it!</li-next>
+				</ul>
+			</section>
+				
+			<section>
+				<div id="my-resume"></div>>
+			</section>
+
+			
+		</div>
+		
+
+
+
+		<!-- END MAIN PAGE -->
+		
+		<script>
+			load__contents();
+		</script>	
+		
+		<hr />
+
+		<!-- START FOOTER -->
+		
+		<div id="my__footer">
+			<!-- Show loading animation until the header is loaded by javascript -->
+			<div class="loader">
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+				<span class="loader__element"></span>
+			</div>
+		</div>
+
+		<!-- END FOOTER -->
+	</div>
+</body>
+
+
+</html>
