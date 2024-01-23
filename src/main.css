@@ -598,7 +598,7 @@ li-break {
     .top__header__nav {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: unset;
         justify-content: center;
     }
     
