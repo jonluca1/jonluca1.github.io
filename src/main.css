@@ -274,6 +274,8 @@ body {
 }
 
 
+
+
 .avatar {
     width: 3.5rem;
     height: 3.5rem;
@@ -549,14 +551,6 @@ li-break {
         padding: 0 30px 10px 30px;
     }
 
-    .logo__link {
-        font-size: 6vw;
-    }
-
-        .logo__link:hover {
-            font-size: 6.5vw;
-        }
-
     hr {
         margin: 5px;
     }
@@ -575,6 +569,37 @@ li-break {
         margin-right: auto;
         display: block;
 	float: unset;
+    }
+
+    /* Header with selections */
+
+    .logo__link {
+        font-size: 9vw;
+    }
+
+        .logo__link:hover {
+            font-size: 6.5vw;
+        }
+
+    .header__button {
+        text-decoration: none;
+        padding: 0.5rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: white;
+        border: none;
+        border-radius: var(--border-radius);
+        outline: none;
+        cursor: pointer;
+        background: var(--color-primary);
+        transition: all 0.5s;
+    }
+
+    .top__header__nav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
     }
     
 }
