@@ -41,23 +41,11 @@
     <script src="/src/javascript/jquery-3.7.1-min.js"></script>
 
 	<!-- Copyright https://pdfobject.com/ -->
-    <script src="https://raw.githubusercontent.com/pipwerks/PDFObject/master/pdfobject.js"></script>
+    <script src="https://raw.githubusercontent.com/pipwerks/PDFObject/master/pdfobject.min.js"></script>
 
     <script>
 		function load__contents () {
         	getScript('/src/main-end.js');
-
-            var options = {
-                height: "400px",
-                page: '2',
-                pdfOpenParams: {
-                    view: 'FitV',
-                    pagemode: 'thumbs',
-                    search: 'lorem ipsum'
-                }
-            };
-
-            PDFObject.embed("/about/sample.pdf", "#my-resume", options);
 		};
     </script>
 	
@@ -128,6 +116,16 @@
 		
 		<script>
 			load__contents();
+			var options = {
+                height: "400px",
+                page: '2',
+                pdfOpenParams: {
+                    view: 'FitV',
+                    pagemode: 'thumbs',
+                    search: 'lorem ipsum'
+                }
+            };
+            PDFObject.embed("/about/sample.pdf", "#my-resume", options);
 		</script>	
 		
 		<hr />
