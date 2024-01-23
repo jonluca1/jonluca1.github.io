@@ -6,13 +6,13 @@
 */
 /* Track 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px #2c0238;
+    box-shadow: inset 0 0 10px var(--scrollbar-background);
     border-radius: 10px;
 }
 */
 /* Handle 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
+    background: var(--scrollbar-default);
     border-radius: 10px;
 }
 */
@@ -28,7 +28,7 @@
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--color-primary) #2c0238;
+    scrollbar-color: var(--scrollbar-default) var(--scrollbar-background);
 }
 
 
@@ -38,29 +38,29 @@
 ::-webkit-scrollbar {
     width: 7.5px;
     height: 7.5px;
-    background: #2c0238;
+    background: var(--scrollbar-background);
 }
 
 ::-webkit-scrollbar-corner {
-    background: #2c0238;
+    background: var(--scrollbar-background);
 }
 
 
 /* Track */
 *::-webkit-scrollbar-track {
-    background: #2c0238;
-    box-shadow: inset 0 0 10px #2c0238;
+    background: var(--scrollbar-background);
+    box-shadow: inset 0 0 10px var(--scrollbar-background);
     border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
+    background: var(--scrollbar-default);
     border-radius: 10px;
     border: 0px;
 }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #9630ee;
+        background: var(--scrollbar-hover);
     }
