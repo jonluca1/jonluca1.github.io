@@ -724,19 +724,6 @@ li-break {
 
 
 
-
-
-/*
-.grecaptcha-badge {
-    display: none !important;
-}*/
-
-.grecaptcha-badge {
-    width: 70px !important;
-    transition: all 0.3s ease !important;
-    right: 0.5rem !important;
-}
-
-.grecaptcha-badge:hover {
-    width: 256px !important;
+#resume-pdf {
+    border-radius: var(--card-border-radius-2);
 }

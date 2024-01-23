@@ -11,7 +11,7 @@
     <style>
         body {
             background: #000000;
-        }
+        }	
     </style>
 
 
@@ -46,18 +46,32 @@
     <script>
 		function load__contents () {
         	getScript('/src/main-end.js');
-
-			var options = {
-                height: "400px",
-                page: '2',
-                pdfOpenParams: {
-                    view: 'FitV',
-                    pagemode: 'thumbs',
-                    search: 'lorem ipsum'
-                }
-            };
 			
-            PDFObject.embed("/about/sample.pdf", "#my-resume", options);
+			if(PDFObject.supportsPDFs){
+				console.log("\u2705 This browser supports inline PDFs");
+
+				var options = {
+					page: '2',
+					id: 'resume-pdf',
+					pdfOpenParams: {
+						view: 'FitH',
+						pagemode: 'none',
+						search: 'lorem ipsum',
+						toolbar: '0'
+					}
+				};
+
+				PDFObject.embed("/about/sample.pdf", "#my-resume", options);
+
+			} else {
+				console.log("\u274C inline PDFs are not supported by this browser");
+				alert("Your Browser does not support to view PDF's directly","OOPS")
+			}
+
+
+
+
+
 		};
     </script>
 	
